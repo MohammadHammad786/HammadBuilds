@@ -1,0 +1,97 @@
+<section id="skills" style="
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('bg.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+">
+
+  <style>
+    @keyframes glowText {
+      from {
+        text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+      }
+      to {
+        text-shadow: 0 0 20px #00e5ff, 0 0 40px #00e5ff;
+      }
+    }
+
+    .skills-heading {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      animation: glowText 2s ease-in-out infinite alternate;
+      background-color: #004d40;
+      padding: 10px 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #004d40;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-card h3 {
+      color: #00e5ff;
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .skills-heading {
+        font-size: 2rem;
+      }
+    }
+  </style>
+
+  <h2 class="skills-heading">My Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>HTML & CSS</h3>
+      <p>Building responsive and accessible websites using modern layout techniques like Flexbox and Grid.</p>
+    </div>
+    <div class="skill-card">
+      <h3>JavaScript</h3>
+      <p>Creating interactive UIs with vanilla JS including animations, DOM manipulation, and API integration.</p>
+    </div>
+    <div class="skill-card">
+      <h3>React</h3>
+      <p>Developing dynamic, single-page applications with component-based architecture and hooks.</p>
+    </div>
+    <div class="skill-card">
+      <h3>Git & GitHub</h3>
+      <p>Version control for collaborative projects, pushing changes and managing repositories efficiently.</p>
+    </div>
+  </div>
+</section>

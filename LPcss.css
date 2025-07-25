@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url(bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh; /* full viewport height */
+    width: 100vw;  /* full viewport width */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: 
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  animation: slideFadeIn 1s ease-out forwards;
+}
+
+.hero .highlight {
+  color: gold;
+}
+
+.hero p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: gold;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #e65100;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.7);
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d0d0d;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Animations */
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+}

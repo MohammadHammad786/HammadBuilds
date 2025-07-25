@@ -1,0 +1,97 @@
+<section id="contact" style="
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image:url(bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+">
+
+  <style>
+    @keyframes glowTextContact {
+      from {
+        text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081;
+      }
+      to {
+        text-shadow: 0 0 20px #ff4081, 0 0 40px #ff4081;
+      }
+    }
+
+    .contact-heading {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      animation: glowTextContact 2s ease-in-out infinite alternate;
+      background-color: #880e4f;
+      padding: 10px 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #880e4f;
+    }
+
+    .contact-form {
+      width: 100%;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      outline: none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #ccc;
+    }
+
+    .contact-form button {
+      background-color: #ff4081;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #f50057;
+    }
+
+    @media (max-width: 600px) {
+      .contact-heading {
+        font-size: 2rem;
+      }
+    }
+  </style>
+
+  <h2 class="contact-heading">Contact Me</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>

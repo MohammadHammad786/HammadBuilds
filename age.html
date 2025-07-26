@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Step-by-Step Age Trick</title>
+  <link rel="stylesheet" href="age.css" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="brand">Hammad Builds</h2>
+    <h1>🎩 Magic Age Trick</h1>
+
+    <div id="steps">
+      <p id="instruction">Ready to begin?</p>
+      <button onclick="nextStep()">Start</button>
+    </div>
+
+    <div id="finalInput" style="display: none;">
+      <p>Now enter your final result:</p>
+      <input type="number" id="finalResult" placeholder="Enter your final result..." />
+      <button onclick="revealAge()">Guess My Age</button>
+    </div>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="age.js"></script>
+</body>
+</html>
